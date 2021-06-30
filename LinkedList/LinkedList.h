@@ -19,6 +19,7 @@ public:
 
 	void min();
 	void max();
+	void unique();
 private:
 	Node* _head;
 	Node* getLastNode();

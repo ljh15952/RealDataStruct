@@ -11,11 +11,11 @@ int main()
 	myList->push(44);
 	myList->push(9);
 	myList->push(1);
-	myList->push(1);
+	myList->push(7);
 	myList->push(1);
 	myList->push(2);
 	myList->push(3);
-	myList->push(4);
+	myList->push(9);
 	myList->push(7);
 	myList->push(8);
 	myList->push(99);
@@ -24,4 +24,6 @@ int main()
 
 	myList->min();
 	myList->max();
+	myList->unique();
+	myList->printAll();
 }

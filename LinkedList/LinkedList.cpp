@@ -195,6 +195,24 @@ void LinkedList::max()
 	cout << "최대값: " << max << endl;
 }
 
+void LinkedList::unique()
+{
+	//중복제거
+	Node* cur = _head;
+	while (cur != nullptr) {
+		Node *runner = cur;
+		while (runner->_next != nullptr) {
+			if (runner->_next->_data == cur->_data) {
+				runner->_next = runner->_next->_next;
+			}
+			else {
+				runner = runner->_next;
+			}
+		}
+		cur = cur->_next;
+	}
+}
+
 
 Node* LinkedList::getLastNode()
 {
