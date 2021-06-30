@@ -21,7 +21,6 @@ int main()
 	myList->push(99);
 	
 	myList->printAll();
-	myList->reversePrintAll();
 
 	myList->min();
 	myList->max();
