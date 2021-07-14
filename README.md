@@ -1,4 +1,4 @@
 # RealDataStruct
-## SingleLinkedList 
-## DoubleLiskedList
-## Stack
+## 1. SingleLinkedList 
+## 2. DoubleLiskedList
+## 3. Stack
