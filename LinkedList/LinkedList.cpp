@@ -213,6 +213,28 @@ void LinkedList::unique()
 	}
 }
 
+int LinkedList::count(int n)
+{
+	//n 이 몇개인지 찾는 코드
+	int count = 0;
+
+	for (Node* cursor = _head; cursor != nullptr; cursor = cursor->_next) {
+		if (cursor->_data == n)
+			count++;
+	}
+
+	return count;
+}
+
+int LinkedList::getNth(int n)
+{
+	//n번째 데이터 반환
+	for (Node* cursor = _head; cursor != nullptr; cursor = cursor->_next, n--) {
+		if (n == 1)
+			return cursor->_data;
+	}
+}
+
 
 Node* LinkedList::getLastNode()
 {

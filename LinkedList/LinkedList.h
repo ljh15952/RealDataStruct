@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "Node.h"
+#include "../Node.h"
 using namespace std;
 class LinkedList {
 public:
@@ -20,6 +20,9 @@ public:
 	void min();
 	void max();
 	void unique();
+	
+	int count(int n);
+	int getNth(int n);
 private:
 	Node* _head;
 	Node* getLastNode();

@@ -123,3 +123,69 @@ int main()
 
 }
 */
+
+/*
+싱글 링크드 리스트 최대값,최소값, 반대로 출력, 중복제거 
+int main()
+{
+	LinkedList* myList = new LinkedList();
+
+	myList->push(44);
+	myList->push(9);
+	myList->push(1);
+	myList->push(7);
+	myList->push(1);
+	myList->push(2);
+	myList->push(3);
+	myList->push(9);
+	myList->push(7);
+	myList->push(8);
+	myList->push(99);
+
+	myList->printAll();
+	myList->reversePrintAll();
+	myList->min();
+	myList->max();
+	myList->unique();
+	myList->printAll();
+}
+*/
+
+/*
+스택 기본 메서드들 테스트 
+
+int main()
+{
+	Stack* stack = new Stack(5);
+	if (stack->isEmpty())
+		cout << "Stack이 비었슴다." << endl;
+	if (!stack->isFull())
+		cout << "Stack이 꽉 차지 않음." << endl;
+	stack->push(1);
+	stack->push(2);
+	stack->push(3);
+	stack->push(5);
+	stack->push(4);
+	stack->printAll();
+	stack->pop();
+	stack->pop();
+	stack->printAll();
+	cout << "현재 Stack의 사이즈 : " << stack->size() << endl;
+	if (!stack->isEmpty())
+		cout << "Stack이 차있슴다." << endl;
+	if (stack->isFull())
+		cout << "Stack이 꽉 참." << endl;
+	cout << "Top의 값: " << stack->peek()->_data << endl;
+	stack->push(1);
+	stack->push(5);
+	stack->push(5);
+	stack->push(5);
+	stack->push(5);
+	stack->push(5);
+	stack->push(5);
+	stack->printAll();
+	cout << "현재 Stack의 사이즈 : " << stack->size() << endl;
+	if (stack->isFull())
+		cout << "Stack이 꽉 참." << endl;
+}
+*/
